@@ -3,6 +3,13 @@
  * Complejidad Computacional
  */
 
+#include "../include/loadingbelt.h"
+
 int main() {
-  return -1;
+  LoadingBelt lb("abc");
+  lb.read('.');
+  lb.print();
+  lb.read('a');
+  lb.read('b');
+  lb.print();
 }
