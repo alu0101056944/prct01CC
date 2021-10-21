@@ -213,6 +213,78 @@ src/main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/state.obj: src/state.cc.obj
+.PHONY : src/state.obj
+
+# target to build an object file
+src/state.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/state.cc.obj
+.PHONY : src/state.cc.obj
+
+src/state.i: src/state.cc.i
+.PHONY : src/state.i
+
+# target to preprocess a source file
+src/state.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/state.cc.i
+.PHONY : src/state.cc.i
+
+src/state.s: src/state.cc.s
+.PHONY : src/state.s
+
+# target to generate assembly for a file
+src/state.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/state.cc.s
+.PHONY : src/state.cc.s
+
+src/statefactory.obj: src/statefactory.cc.obj
+.PHONY : src/statefactory.obj
+
+# target to build an object file
+src/statefactory.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/statefactory.cc.obj
+.PHONY : src/statefactory.cc.obj
+
+src/statefactory.i: src/statefactory.cc.i
+.PHONY : src/statefactory.i
+
+# target to preprocess a source file
+src/statefactory.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/statefactory.cc.i
+.PHONY : src/statefactory.cc.i
+
+src/statefactory.s: src/statefactory.cc.s
+.PHONY : src/statefactory.s
+
+# target to generate assembly for a file
+src/statefactory.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/statefactory.cc.s
+.PHONY : src/statefactory.cc.s
+
+src/statetransition.obj: src/statetransition.cc.obj
+.PHONY : src/statetransition.obj
+
+# target to build an object file
+src/statetransition.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/statetransition.cc.obj
+.PHONY : src/statetransition.cc.obj
+
+src/statetransition.i: src/statetransition.cc.i
+.PHONY : src/statetransition.i
+
+# target to preprocess a source file
+src/statetransition.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/statetransition.cc.i
+.PHONY : src/statetransition.cc.i
+
+src/statetransition.s: src/statetransition.cc.s
+.PHONY : src/statetransition.s
+
+# target to generate assembly for a file
+src/statetransition.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/statetransition.cc.s
+.PHONY : src/statetransition.cc.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -232,6 +304,15 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/state.obj
+	@echo ... src/state.i
+	@echo ... src/state.s
+	@echo ... src/statefactory.obj
+	@echo ... src/statefactory.i
+	@echo ... src/statefactory.s
+	@echo ... src/statetransition.obj
+	@echo ... src/statetransition.i
+	@echo ... src/statetransition.s
 .PHONY : help
 
 

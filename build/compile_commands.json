@@ -13,5 +13,20 @@
   "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
   "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\filereader.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\filereader.cc",
   "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/filereader.cc"
+},
+{
+  "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\statefactory.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\statefactory.cc",
+  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/statefactory.cc"
+},
+{
+  "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\statetransition.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\statetransition.cc",
+  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/statetransition.cc"
+},
+{
+  "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\state.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\state.cc",
+  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/state.cc"
 }
 ]

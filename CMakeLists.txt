@@ -6,6 +6,9 @@ add_library(Assignment1Sources
 
 add_executable(Assignment1 src/main.cc
                     src/filereader.cc
+                    src/statefactory.cc
+                    src/statetransition.cc
+                    src/state.cc
               )
 
 target_link_libraries(Assignment1 Assignment1Sources)

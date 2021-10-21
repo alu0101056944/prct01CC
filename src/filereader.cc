@@ -113,7 +113,7 @@ char FileReader::initialStackSymbol() {
  */
 vector<vector<string>> FileReader::transitions() {
   vector<vector<string>> transitions;
-  for (int i = 6; i < fileContent.size(); i++) { // There's always 6 lines at least
+  for (int i = 5; i < fileContent.size(); i++) { // There's always 6 lines at least
     vector<string> transition;
     stringstream ss(fileContent[i]);
     string word;

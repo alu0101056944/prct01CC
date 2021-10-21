@@ -3,9 +3,12 @@
 #include <sstream>
 #include <string>
 
-StateFactory::StateFactory(int numberOfStates, vector<vector<string>> transitions) {
+
+StateFactory::StateFactory(int numberOfStates, vector<vector<string>>& transitions) {
   resetAutomata(numberOfStates, transitions);
 }
+
+unordered_map<int, vector<StateTransition>> StateFactory::availableStates;
 
 /**
  * Here a transition is a string word with the following format:
@@ -18,7 +21,7 @@ StateFactory::StateFactory(int numberOfStates, vector<vector<string>> transition
  *  corresponding available state's transitions vector.
  */
 void StateFactory::resetAutomata(int numberOfStates,
-     vector<vector<string>> transitions) {
+     vector<vector<string>>& transitions) {
   availableStates.clear();
   for (int i = 0; i < numberOfStates; i++) { //initialize possible states
     availableStates.insert({i, vector<StateTransition>()});
@@ -27,8 +30,11 @@ void StateFactory::resetAutomata(int numberOfStates,
   for(int i = 0; i < transitions.size(); i++) {
     char beltSymbol = transitions[i][1][0]; // only has one character
     char stackSymbolToPop = transitions[i][2][0]; // only has one character
-    string stackSymbolsToInsert = transitions[i][2];
-    int nextState = stoi(transitions[i][0].erase(0, 1)); // remove q char. and keep the number
+    string stackSymbolsToInsert = "";
+    for(int j = 4; j < transitions[i].size(); j++) { // append all the symbols to be inserted
+      stackSymbolsToInsert.append(transitions[i][j]);
+    }
+    int nextState = stoi(transitions[i][3].erase(0, 1)); // remove q char. and keep the number
     StateTransition stateTransition(beltSymbol, stackSymbolToPop, stackSymbolsToInsert,
         nextState);
     
@@ -37,6 +43,6 @@ void StateFactory::resetAutomata(int numberOfStates,
   }
 }
 
-State StateFactory::createState(int id) { 
+State StateFactory::createState(int id) {
   return State(id, availableStates[id]);
 }

@@ -25,6 +25,7 @@ class State {
     State(int id, vector<StateTransition> transitions);
     
     void addTransition(StateTransition t);
+    void print();
   private:
     int id;
     vector<StateTransition> transitions;

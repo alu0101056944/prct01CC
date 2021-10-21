@@ -16,8 +16,6 @@
 
 #include <string>
 
-#include "./state.h"
-
 using namespace std;
 
 class StateTransition {

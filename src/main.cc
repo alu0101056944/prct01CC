@@ -11,5 +11,8 @@
 int main() {
   FileReader fileReader;
   fileReader.readFile("../bin/APv.txt");
-  StateFactory stateFactory(fileReader.numberOfStates(), vector<vector<string>>());
+  vector<vector<string>> ref = fileReader.transitions();
+  StateFactory stateFactory(fileReader.numberOfStates(), ref);
+  State a = stateFactory.createState(2);
+  a.print();
 }
