@@ -4,6 +4,8 @@ project(Assignment1 VERSION 0.1.0)
 add_library(Assignment1Sources
     src/loadingbelt.cc)
 
-add_executable(Assignment1 src/main.cc)
+add_executable(Assignment1 src/main.cc
+                    src/filereader.cc
+              )
 
 target_link_libraries(Assignment1 Assignment1Sources)

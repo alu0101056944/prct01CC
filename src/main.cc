@@ -3,15 +3,17 @@
  * Complejidad Computacional
  */
 
-#include "../include/loadingbelt.h"
-#include "../include/State.h"
+#include "../include/filereader.h"
 
+#include <iostream>
 #include <stack>
 using namespace std;
 int main() {
-  LoadingBelt lb("abc");
-  lb.read('.');
-  lb.read('a');
-  lb.read('b');
-  stack<State> s;
+  FileReader fileReader;
+  fileReader.readFile("../bin/APv.txt");
+  cout << fileReader.numberOfStates() << endl;
+  cout << fileReader.initialStackSymbol() << endl;
+  cout << fileReader.stackAlphabet() << endl << endl;
+  cout << fileReader.beltAlphabet() << endl << endl;
+  cout << fileReader.initialState() << endl;  
 }

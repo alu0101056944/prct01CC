@@ -11,7 +11,7 @@ LoadingBelt::LoadingBelt(vector<char> alphabet, string inputWord) :
 void LoadingBelt::read(char symbol) {
   if(find(alphabet.begin(), alphabet.end(), symbol) == alphabet.end()) {
     // alphabet doesn't contain symbol[i]
-    throw logic_error{"Attempt read of non-alphabet character from loading belt"};
+    throw logic_error{"Attempt read of non-alphabet character on loading belt"};
   }
   if (indexOfHead < belt.size() && symbol != '.' && 
       symbol == belt[indexOfHead]) {

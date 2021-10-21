@@ -19,6 +19,7 @@ Automata::Automata(Stack& stack, LoadingBelt& loadingBelt) :
  */
 bool Automata::validate(string inputWord) {
   // to fix stack<int> s;
+  
   /**
    * s.push(StateFactory.initialState());
    * while(!stack.empty() && !s.empty()) {

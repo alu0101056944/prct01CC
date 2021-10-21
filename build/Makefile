@@ -141,6 +141,30 @@ Assignment1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/build
 .PHONY : Assignment1/fast
 
+src/filereader.obj: src/filereader.cc.obj
+.PHONY : src/filereader.obj
+
+# target to build an object file
+src/filereader.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/filereader.cc.obj
+.PHONY : src/filereader.cc.obj
+
+src/filereader.i: src/filereader.cc.i
+.PHONY : src/filereader.i
+
+# target to preprocess a source file
+src/filereader.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/filereader.cc.i
+.PHONY : src/filereader.cc.i
+
+src/filereader.s: src/filereader.cc.s
+.PHONY : src/filereader.s
+
+# target to generate assembly for a file
+src/filereader.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/filereader.cc.s
+.PHONY : src/filereader.cc.s
+
 src/loadingbelt.obj: src/loadingbelt.cc.obj
 .PHONY : src/loadingbelt.obj
 
@@ -199,6 +223,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Assignment1
 	@echo ... Assignment1Sources
+	@echo ... src/filereader.obj
+	@echo ... src/filereader.i
+	@echo ... src/filereader.s
 	@echo ... src/loadingbelt.obj
 	@echo ... src/loadingbelt.i
 	@echo ... src/loadingbelt.s

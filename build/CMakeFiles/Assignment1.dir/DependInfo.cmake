@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/filereader.cc" "CMakeFiles/Assignment1.dir/src/filereader.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/filereader.cc.obj.d"
   "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/main.cc" "CMakeFiles/Assignment1.dir/src/main.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/main.cc.obj.d"
   )
 
