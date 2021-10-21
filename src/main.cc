@@ -3,17 +3,13 @@
  * Complejidad Computacional
  */
 
-#include "../include/filereader.h"
+#include <vector>
 
-#include <iostream>
-#include <stack>
-using namespace std;
+#include "../include/filereader.h"
+#include "../include/statefactory.h"
+
 int main() {
   FileReader fileReader;
   fileReader.readFile("../bin/APv.txt");
-  cout << fileReader.numberOfStates() << endl;
-  cout << fileReader.initialStackSymbol() << endl;
-  cout << fileReader.stackAlphabet() << endl << endl;
-  cout << fileReader.beltAlphabet() << endl << endl;
-  cout << fileReader.initialState() << endl;  
+  StateFactory stateFactory(fileReader.numberOfStates(), vector<vector<string>>());
 }

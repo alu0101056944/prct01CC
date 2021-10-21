@@ -21,7 +21,7 @@ class StateTransitioner {
   public:
     StateTransitioner();
 
-    vector<string> nextTransition();
+    StateTransition nextTransition();
 
 };
 

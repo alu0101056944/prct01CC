@@ -16,12 +16,18 @@
 #ifndef STATE_h
 #define STATE_h
 
+#include <vector>
+
+#include "./statetransition.h"
 
 class State {
   public:
-    State();
-
-  
+    State(int id, vector<StateTransition> transitions);
+    
+    void addTransition(StateTransition t);
+  private:
+    int id;
+    vector<StateTransition> transitions;
 };
 
 #endif

@@ -16,12 +16,13 @@
 
 #include <string>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
 class Stack {
   public:
-    Stack(char initialSym, vector<string> alphabet);
+    Stack(char initialSym, string alphabet);
 
     /**
      * Pushes a set of chars (string). Throw exception if it attempts to push a
@@ -36,7 +37,7 @@ class Stack {
     bool empty();
   private:
     stack<char> stack;
-    vector<string> alphabet;
+    string alphabet;
     char initialSym;
 };
 

@@ -22,8 +22,18 @@ using namespace std;
 
 class StateTransition {
   public:
-    StateTransition(char beltSymbol, char stackSymbolToPop, string stackSymbolsToInsert);
+    StateTransition(char beltSymbol, char stackSymbolToPop, string stackSymbolsToInsert,
+      int nextState);
 
+    char getBeltSymbol();
+    char getStackSymbolToPop();
+    string getStackSymbolsToInsert();
+    int getNextState();
+  private:
+    char beltSymbol;
+    char stackSymbolToPop;
+    string stackSymbolsToInsert;
+    int nextState;
 };
 
 #endif

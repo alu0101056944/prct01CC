@@ -23,7 +23,7 @@ using namespace std;
 
 class LoadingBelt {
   public:
-    LoadingBelt(vector<char> alphabet, string inputWord);
+    LoadingBelt(string alphabet, string inputWord);
 
     /**
      * Moves the head if symbol is equal to the current cell's element the
@@ -32,15 +32,16 @@ class LoadingBelt {
      */
     void read(char symbol);
 
-    /**
-     * If an input word was given and head points at the following cell to the last
-     * cell containing the last character of the input word. Also if an input word
-     * wasn't given (belt is empty).
-     */
-    bool finished();
+    private:
+      /**
+       * If an input word was given and head points at the following cell to the last
+       * cell containing the last character of the input word. Also if an input word
+       * wasn't given (belt is empty).
+       */
+      bool finished();
   private:
-    vector<char> belt;
-    vector<char> alphabet;
+    string belt;
+    string alphabet;
     int indexOfHead;
 };
 #endif

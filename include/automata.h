@@ -31,23 +31,27 @@
 #define AUTOMATA_H
 
 #include <string>
-#include <stack>
 
-#include "../include/stack.h"
 #include "../include/state.h"
+#include "../include/stack.h"
 #include "../include/loadingbelt.h"
+#include "../include/statetransitioner.h"
 
 using namespace std;
 
 class Automata {
   public:
-    Automata(Stack& stack, LoadingBelt& loadingBelt);
+    Automata(string beltAlphabet, string stackAlphabet, int initialState,
+        char initialStackSym, string inputWord);
 
     bool validate(string inputWord);
   private:
-    Stack& stack;
-    LoadingBelt& loadingBelt;
-    // TODO: stack<State> s;
-
+    Stack stack;
+    LoadingBelt loadingBelt;
+    StateTransitioner stateTransitioner;
+    string beltAlphabet;
+    string stackAlphabet;
+    int initialState;
+    char initialStackSym;
 };
 #endif

@@ -1,8 +1,16 @@
 #include "../include/automata.h"
 
-Automata::Automata(Stack& stack, LoadingBelt& loadingBelt) :
-  stack(stack),
-  loadingBelt(loadingBelt) {}
+#include "../include/statetransition.h"
+
+Automata::Automata(string beltAlphabet, string stackAlphabet, int initialState,
+    char initialStackSym, string inputWord) :
+    beltAlphabet(beltAlphabet),
+    stackAlphabet(stackAlphabet),
+    initialState(initialState),
+    initialStackSym(initialStackSym),
+    stack(initialStackSym, stackAlphabet),
+    loadingBelt(beltAlphabet, inputWord),
+    stateTransitioner() {}
 
 /**
  * Solo paro de ejecutar cuando la pila este vacia. Si la palabra es valida
@@ -18,13 +26,10 @@ Automata::Automata(Stack& stack, LoadingBelt& loadingBelt) :
  * de informacion sobre estado y transiciones asignadas.
  */
 bool Automata::validate(string inputWord) {
-  // to fix stack<int> s;
-  
-  /**
-   * s.push(StateFactory.initialState());
-   * while(!stack.empty() && !s.empty()) {
-   *  s.top.transitioner().obtainNextTransition()
-   * }
-   * 
-   */
+  while(!stack.empty()) {
+    StateTransition transition = stateTransitioner.nextTransition();
+    loadingBelt.read(transition.getBeltSymbol());
+    stack.push(transition.getStackSymbolsToInsert());
+    
+  }
 }
