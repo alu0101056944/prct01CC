@@ -17,6 +17,15 @@ void LoadingBelt::read(char symbol) {
   }
   if (symbol != '.' && symbol == belt[indexOfHead]) {
     indexOfHead++;
+    history.push(symbol);
+  }
+}
+
+void LoadingBelt::fallback() {
+  while(!history.empty()) {
+    if (history.top() != '.') {
+      indexOfHead--;
+    }
   }
 }
 

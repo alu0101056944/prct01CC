@@ -141,6 +141,30 @@ Assignment1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/build
 .PHONY : Assignment1/fast
 
+src/automata.obj: src/automata.cc.obj
+.PHONY : src/automata.obj
+
+# target to build an object file
+src/automata.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/automata.cc.obj
+.PHONY : src/automata.cc.obj
+
+src/automata.i: src/automata.cc.i
+.PHONY : src/automata.i
+
+# target to preprocess a source file
+src/automata.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/automata.cc.i
+.PHONY : src/automata.cc.i
+
+src/automata.s: src/automata.cc.s
+.PHONY : src/automata.s
+
+# target to generate assembly for a file
+src/automata.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/automata.cc.s
+.PHONY : src/automata.cc.s
+
 src/filereader.obj: src/filereader.cc.obj
 .PHONY : src/filereader.obj
 
@@ -171,6 +195,7 @@ src/loadingbelt.obj: src/loadingbelt.cc.obj
 # target to build an object file
 src/loadingbelt.cc.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1Sources.dir\build.make CMakeFiles/Assignment1Sources.dir/src/loadingbelt.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj
 .PHONY : src/loadingbelt.cc.obj
 
 src/loadingbelt.i: src/loadingbelt.cc.i
@@ -179,6 +204,7 @@ src/loadingbelt.i: src/loadingbelt.cc.i
 # target to preprocess a source file
 src/loadingbelt.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1Sources.dir\build.make CMakeFiles/Assignment1Sources.dir/src/loadingbelt.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/loadingbelt.cc.i
 .PHONY : src/loadingbelt.cc.i
 
 src/loadingbelt.s: src/loadingbelt.cc.s
@@ -187,6 +213,7 @@ src/loadingbelt.s: src/loadingbelt.cc.s
 # target to generate assembly for a file
 src/loadingbelt.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1Sources.dir\build.make CMakeFiles/Assignment1Sources.dir/src/loadingbelt.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/loadingbelt.cc.s
 .PHONY : src/loadingbelt.cc.s
 
 src/main.obj: src/main.cc.obj
@@ -212,6 +239,30 @@ src/main.s: src/main.cc.s
 src/main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/main.cc.s
 .PHONY : src/main.cc.s
+
+src/stack.obj: src/stack.cc.obj
+.PHONY : src/stack.obj
+
+# target to build an object file
+src/stack.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/stack.cc.obj
+.PHONY : src/stack.cc.obj
+
+src/stack.i: src/stack.cc.i
+.PHONY : src/stack.i
+
+# target to preprocess a source file
+src/stack.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/stack.cc.i
+.PHONY : src/stack.cc.i
+
+src/stack.s: src/stack.cc.s
+.PHONY : src/stack.s
+
+# target to generate assembly for a file
+src/stack.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/stack.cc.s
+.PHONY : src/stack.cc.s
 
 src/state.obj: src/state.cc.obj
 .PHONY : src/state.obj
@@ -295,6 +346,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Assignment1
 	@echo ... Assignment1Sources
+	@echo ... src/automata.obj
+	@echo ... src/automata.i
+	@echo ... src/automata.s
 	@echo ... src/filereader.obj
 	@echo ... src/filereader.i
 	@echo ... src/filereader.s
@@ -304,6 +358,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/stack.obj
+	@echo ... src/stack.i
+	@echo ... src/stack.s
 	@echo ... src/state.obj
 	@echo ... src/state.i
 	@echo ... src/state.s

@@ -4,11 +4,14 @@
 #include <string>
 
 
-StateFactory::StateFactory(int numberOfStates, vector<vector<string>>& transitions) {
-  resetAutomata(numberOfStates, transitions);
+StateFactory::StateFactory(int numberOfStates, int initialState,
+    vector<vector<string>>& transitions) {
+  resetAutomata(numberOfStates, initialState, transitions);
 }
 
 unordered_map<int, vector<StateTransition>> StateFactory::availableStates;
+
+int StateFactory::initialState = 0;
 
 /**
  * Here a transition is a string word with the following format:
@@ -20,12 +23,13 @@ unordered_map<int, vector<StateTransition>> StateFactory::availableStates;
  * I parse the format into StateTransition objects and assign them to the
  *  corresponding available state's transitions vector.
  */
-void StateFactory::resetAutomata(int numberOfStates,
+void StateFactory::resetAutomata(int numberOfStates, int initialState,
      vector<vector<string>>& transitions) {
   availableStates.clear();
   for (int i = 0; i < numberOfStates; i++) { //initialize possible states
     availableStates.insert({i, vector<StateTransition>()});
   }
+  StateFactory::initialState = initialState;
 
   for(int i = 0; i < transitions.size(); i++) {
     char beltSymbol = transitions[i][1][0]; // only has one character

@@ -17,6 +17,7 @@
 #define LOADINGBELT_H
 
 #include <vector>
+#include <stack>
 #include <string>
 
 using namespace std;
@@ -32,6 +33,12 @@ class LoadingBelt {
      */
     void read(char symbol);
 
+    /**
+     * Used when I need to go back to a previous state. Moves the head to the
+     * position it was originally since the last state change. Clears the history
+     * aswell.
+     */
+    void fallback();
     private:
       /**
        * If an input word was given and head points at the following cell to the last
@@ -43,5 +50,6 @@ class LoadingBelt {
     string belt;
     string alphabet;
     int indexOfHead;
+    stack<char> history;
 };
 #endif

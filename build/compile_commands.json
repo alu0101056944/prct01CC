@@ -28,5 +28,20 @@
   "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
   "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\state.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\state.cc",
   "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/state.cc"
+},
+{
+  "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\stack.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\stack.cc",
+  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/stack.cc"
+},
+{
+  "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\loadingbelt.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\loadingbelt.cc",
+  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/loadingbelt.cc"
+},
+{
+  "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\automata.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\automata.cc",
+  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/automata.cc"
 }
 ]

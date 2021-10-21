@@ -41,8 +41,8 @@ using namespace std;
 
 class Automata {
   public:
-    Automata(string beltAlphabet, string stackAlphabet, int initialState,
-        char initialStackSym, string inputWord);
+    Automata(string beltAlphabet, string stackAlphabet, char initialStackSym,
+        string inputWord);
 
     bool validate(string inputWord);
   private:
@@ -51,7 +51,6 @@ class Automata {
     StateTransitioner stateTransitioner;
     string beltAlphabet;
     string stackAlphabet;
-    int initialState;
     char initialStackSym;
 };
 #endif

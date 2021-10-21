@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <stdexcept>
 
-Stack::Stack(char initialSym, vector<string> alphabet) :
+Stack::Stack(char initialSym, string alphabet) :
     initialSym(initialSym),
     alphabet(alphabet) {}
 
@@ -15,6 +15,7 @@ void Stack::push(string symbols) {
       throw logic_error{"Attempt push of non-alphabet character into stack"};
     }
     stack.push(symbols[i]);
+    history.push(symbols[i]);
   }
 }
 
@@ -28,7 +29,13 @@ void Stack::pop(char symbol) {
   } else if (stack.top() != symbol) {
     throw logic_error{"Can't pop(symbol) because symbol isn't on top of the stack"};
   }
-  stack.pop(symbol);
+  stack.pop();
+}
+
+void Stack::fallback() {
+  while(!history.empty()) {
+    stack.pop();
+  }
 }
 
 bool Stack::empty() {

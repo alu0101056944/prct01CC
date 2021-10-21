@@ -138,13 +138,58 @@ CMakeFiles/Assignment1.dir/src/state.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/src/state.cc.s"
 	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\state.cc -o CMakeFiles\Assignment1.dir\src\state.cc.s
 
+CMakeFiles/Assignment1.dir/src/stack.cc.obj: CMakeFiles/Assignment1.dir/flags.make
+CMakeFiles/Assignment1.dir/src/stack.cc.obj: ../src/stack.cc
+CMakeFiles/Assignment1.dir/src/stack.cc.obj: CMakeFiles/Assignment1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Assignment1.dir/src/stack.cc.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/src/stack.cc.obj -MF CMakeFiles\Assignment1.dir\src\stack.cc.obj.d -o CMakeFiles\Assignment1.dir\src\stack.cc.obj -c D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\stack.cc
+
+CMakeFiles/Assignment1.dir/src/stack.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/src/stack.cc.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\stack.cc > CMakeFiles\Assignment1.dir\src\stack.cc.i
+
+CMakeFiles/Assignment1.dir/src/stack.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/src/stack.cc.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\stack.cc -o CMakeFiles\Assignment1.dir\src\stack.cc.s
+
+CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj: CMakeFiles/Assignment1.dir/flags.make
+CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj: ../src/loadingbelt.cc
+CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj: CMakeFiles/Assignment1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj -MF CMakeFiles\Assignment1.dir\src\loadingbelt.cc.obj.d -o CMakeFiles\Assignment1.dir\src\loadingbelt.cc.obj -c D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\loadingbelt.cc
+
+CMakeFiles/Assignment1.dir/src/loadingbelt.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/src/loadingbelt.cc.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\loadingbelt.cc > CMakeFiles\Assignment1.dir\src\loadingbelt.cc.i
+
+CMakeFiles/Assignment1.dir/src/loadingbelt.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/src/loadingbelt.cc.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\loadingbelt.cc -o CMakeFiles\Assignment1.dir\src\loadingbelt.cc.s
+
+CMakeFiles/Assignment1.dir/src/automata.cc.obj: CMakeFiles/Assignment1.dir/flags.make
+CMakeFiles/Assignment1.dir/src/automata.cc.obj: ../src/automata.cc
+CMakeFiles/Assignment1.dir/src/automata.cc.obj: CMakeFiles/Assignment1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Assignment1.dir/src/automata.cc.obj"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Assignment1.dir/src/automata.cc.obj -MF CMakeFiles\Assignment1.dir\src\automata.cc.obj.d -o CMakeFiles\Assignment1.dir\src\automata.cc.obj -c D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\automata.cc
+
+CMakeFiles/Assignment1.dir/src/automata.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/src/automata.cc.i"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\automata.cc > CMakeFiles\Assignment1.dir\src\automata.cc.i
+
+CMakeFiles/Assignment1.dir/src/automata.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/src/automata.cc.s"
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\automata.cc -o CMakeFiles\Assignment1.dir\src\automata.cc.s
+
 # Object files for target Assignment1
 Assignment1_OBJECTS = \
 "CMakeFiles/Assignment1.dir/src/main.cc.obj" \
 "CMakeFiles/Assignment1.dir/src/filereader.cc.obj" \
 "CMakeFiles/Assignment1.dir/src/statefactory.cc.obj" \
 "CMakeFiles/Assignment1.dir/src/statetransition.cc.obj" \
-"CMakeFiles/Assignment1.dir/src/state.cc.obj"
+"CMakeFiles/Assignment1.dir/src/state.cc.obj" \
+"CMakeFiles/Assignment1.dir/src/stack.cc.obj" \
+"CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj" \
+"CMakeFiles/Assignment1.dir/src/automata.cc.obj"
 
 # External object files for target Assignment1
 Assignment1_EXTERNAL_OBJECTS =
@@ -154,12 +199,15 @@ Assignment1.exe: CMakeFiles/Assignment1.dir/src/filereader.cc.obj
 Assignment1.exe: CMakeFiles/Assignment1.dir/src/statefactory.cc.obj
 Assignment1.exe: CMakeFiles/Assignment1.dir/src/statetransition.cc.obj
 Assignment1.exe: CMakeFiles/Assignment1.dir/src/state.cc.obj
+Assignment1.exe: CMakeFiles/Assignment1.dir/src/stack.cc.obj
+Assignment1.exe: CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj
+Assignment1.exe: CMakeFiles/Assignment1.dir/src/automata.cc.obj
 Assignment1.exe: CMakeFiles/Assignment1.dir/build.make
 Assignment1.exe: libAssignment1Sources.a
 Assignment1.exe: CMakeFiles/Assignment1.dir/linklibs.rsp
 Assignment1.exe: CMakeFiles/Assignment1.dir/objects1.rsp
 Assignment1.exe: CMakeFiles/Assignment1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Assignment1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Assignment1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Assignment1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

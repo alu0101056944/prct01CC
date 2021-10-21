@@ -1,4 +1,4 @@
-CMakeFiles/Assignment1Sources.dir/src/loadingbelt.cc.obj: \
+CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj: \
  D:\Educacion\Universidad\ULL\Tercera_matriculacion\Complejidad_computacional\Practica1\Proyecto\src\loadingbelt.cc \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\loadingbelt.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \

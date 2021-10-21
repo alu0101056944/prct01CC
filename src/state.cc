@@ -2,7 +2,15 @@
 
 #include <iostream>
 State::State(int id, vector<StateTransition> transitions) : 
-    id(id), transitions(transitions) {}
+    id(id), indexOfNextTransition(0), transitions(transitions) {}
+
+StateTransition State::getNextTransition() {
+  return transitions[indexOfNextTransition++];
+}
+
+bool State::nonAppliedTransitions() {
+  return indexOfNextTransition < transitions.size();
+}
 
 void State::print() {
   for (int i = 0; i < transitions.size(); i++) {

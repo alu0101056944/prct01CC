@@ -13,8 +13,12 @@
 #ifndef STATETRANSITIONER_H
 #define STATETRANSITIONER_H
 
+#include "../include/statetransition.h"
+#include "../include/state.h"
+
 #include <vector>
 #include <string>
+#include <stack>
 using namespace std;
 
 class StateTransitioner {
@@ -22,7 +26,9 @@ class StateTransitioner {
     StateTransitioner();
 
     StateTransition nextTransition();
-
+    
+  private:
+    stack<State> stateHistory;
 };
 
 #endif  

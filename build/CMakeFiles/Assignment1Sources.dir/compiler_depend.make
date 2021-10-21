@@ -44,6 +44,12 @@ CMakeFiles/Assignment1Sources.dir/src/loadingbelt.cc.obj: ../src/loadingbelt.cc 
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stack \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/deque \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_deque.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/deque.tcc \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_stack.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h \
@@ -163,25 +169,25 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h:
 
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h:
-
-C:/MinGW/include/direct.h:
-
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/exception:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/deque.tcc:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h:
 
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h:
+C:/MinGW/include/direct.h:
 
-C:/MinGW/include/stdint.h:
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h:
 
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h:
-
 C:/MinGW/include/time.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h:
 
@@ -219,13 +225,19 @@ C:/MinGW/include/stdio.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h:
 
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h:
-
 C:/MinGW/include/io.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/istream:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/deque:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stack:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.tcc:
 
@@ -250,6 +262,12 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_deque.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_stack.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string:
 
@@ -276,6 +294,8 @@ C:/MinGW/include/sys/types.h:
 C:/MinGW/include/stdlib.h:
 
 C:/MinGW/include/sys/stat.h:
+
+C:/MinGW/include/stdint.h:
 
 C:/MinGW/include/locale.h:
 
@@ -364,7 +384,5 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits:

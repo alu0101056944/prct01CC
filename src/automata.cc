@@ -2,15 +2,13 @@
 
 #include "../include/statetransition.h"
 
-Automata::Automata(string beltAlphabet, string stackAlphabet, int initialState,
+Automata::Automata(string beltAlphabet, string stackAlphabet
     char initialStackSym, string inputWord) :
     beltAlphabet(beltAlphabet),
     stackAlphabet(stackAlphabet),
-    initialState(initialState),
     initialStackSym(initialStackSym),
     stack(initialStackSym, stackAlphabet),
-    loadingBelt(beltAlphabet, inputWord),
-    stateTransitioner() {}
+    loadingBelt(beltAlphabet, inputWord) {}
 
 /**
  * Solo paro de ejecutar cuando la pila este vacia. Si la palabra es valida

@@ -9,6 +9,9 @@ add_executable(Assignment1 src/main.cc
                     src/statefactory.cc
                     src/statetransition.cc
                     src/state.cc
+                    src/stack.cc
+                    src/loadingbelt.cc
+                    src/automata.cc
               )
 
 target_link_libraries(Assignment1 Assignment1Sources)

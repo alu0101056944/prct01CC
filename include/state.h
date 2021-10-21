@@ -24,10 +24,12 @@ class State {
   public:
     State(int id, vector<StateTransition> transitions);
     
-    void addTransition(StateTransition t);
+    StateTransition getNextTransition();
+    bool nonAppliedTransitions();
     void print();
   private:
     int id;
+    int indexOfNextTransition;
     vector<StateTransition> transitions;
 };
 

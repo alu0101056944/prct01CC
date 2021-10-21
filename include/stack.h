@@ -35,8 +35,10 @@ class Stack {
      */
     void pop(char symbol);
     bool empty();
+
+    void fallback();
   private:
-    stack<char> stack;
+    stack<char> stack, history;
     string alphabet;
     char initialSym;
 };
