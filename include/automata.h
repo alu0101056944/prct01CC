@@ -29,12 +29,25 @@
 
 #ifndef AUTOMATA_H
 #define AUTOMATA_H
+
+#include <string>
+#include <stack>
+
+#include "../include/stack.h"
+#include "../include/state.h"
+#include "../include/loadingbelt.h"
+
+using namespace std;
+
 class Automata {
   public:
-    Automata();
+    Automata(Stack& stack, LoadingBelt& loadingBelt);
 
-    
+    bool validate(string inputWord);
   private:
+    Stack& stack;
+    LoadingBelt& loadingBelt;
+    // TODO: stack<State> s;
 
 };
 #endif

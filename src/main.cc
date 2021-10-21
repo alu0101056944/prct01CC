@@ -4,12 +4,14 @@
  */
 
 #include "../include/loadingbelt.h"
+#include "../include/State.h"
 
+#include <stack>
+using namespace std;
 int main() {
   LoadingBelt lb("abc");
   lb.read('.');
-  lb.print();
   lb.read('a');
   lb.read('b');
-  lb.print();
+  stack<State> s;
 }
