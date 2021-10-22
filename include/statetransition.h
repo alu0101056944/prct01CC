@@ -19,17 +19,17 @@
 class StateTransition {
   public:
     StateTransition(char beltSymbol, char stackSymbolToPop, std::string stackSymbolsToInsert,
-      int nextState);
+      std::string nextState);
 
     char getBeltSymbol();
     char getStackSymbolToPop();
     std::string getStackSymbolsToInsert();
-    int getNextState();
+    std::string getNextState();
   private:
     char beltSymbol;
     char stackSymbolToPop;
     std::string stackSymbolsToInsert;
-    int nextState;
+    std::string nextState;
 };
 
 #endif

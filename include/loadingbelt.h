@@ -11,7 +11,6 @@
  * An empty symbol can be read, which means not to apply header movement on one
  *  transition.
  * 
- * TODO: Implement language alphabet checks.
  */
 #ifndef LOADINGBELT_H
 #define LOADINGBELT_H
@@ -46,9 +45,7 @@ class LoadingBelt {
     bool isFinished();
 
     void clear();
-
     void reset(std::string inputWord);
-
     bool canRead(char symbol);
 
   private:

@@ -22,19 +22,13 @@
 
 class State {
   public:
-    State(int id, std::vector<StateTransition> transitions);
+    State(std::string stateName, std::vector<StateTransition> transitions);
     
     StateTransition getNextTransition();
-    void print();
     bool moreTransitionsAvailable();
-    bool isSameState(int idOfOtherState);
-
-    /**
-     * Used for the stack history of the automata
-     */
-    State copy();
+    bool isSameState(std::string otherStateName);
   private:
-    int id;
+    std::string stateName;
     int indexOfNextTransition;
     std::vector<StateTransition> transitions;
 };
