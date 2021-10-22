@@ -35,7 +35,7 @@ class Stack {
      */
     void pop(char symbol);
     bool empty();
-
+    void clear();
     void fallback();
   private:
     stack<char> stack, history;

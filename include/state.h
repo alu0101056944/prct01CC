@@ -27,6 +27,8 @@ class State {
     StateTransition getNextTransition();
     void print();
     bool moreTransitionsAvailable();
+    bool isSameState(int idOfOtherState);
+    State copy();
   private:
     int id;
     int indexOfNextTransition;

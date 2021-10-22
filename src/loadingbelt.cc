@@ -3,8 +3,7 @@
 #include <iostream>
 #include <algorithm>
 
-LoadingBelt::LoadingBelt(string alphabet, string inputWord) : 
-    belt(inputWord.begin(), inputWord.end()),
+LoadingBelt::LoadingBelt(string alphabet) :
     alphabet(alphabet),
     indexOfHead(0) {}
 
@@ -29,4 +28,12 @@ void LoadingBelt::fallback() {
 
 bool LoadingBelt::isFinished() {
   return belt.size() == 0 || belt.size() > 0 && indexOfHead == belt.size();
+}
+
+void LoadingBelt::reset(string inputWord) {
+  belt = inputWord;
+}
+
+void LoadingBelt::clear() {
+  belt.clear();
 }

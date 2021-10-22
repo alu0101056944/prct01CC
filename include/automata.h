@@ -40,8 +40,7 @@ using namespace std;
 
 class Automata {
   public:
-    Automata(string beltAlphabet, string stackAlphabet, char initialStackSym,
-        string inputWord);
+    Automata(string beltAlphabet, string stackAlphabet, char initialStackSym);
 
     bool validate(string inputWord);
   private:

@@ -24,7 +24,7 @@ using namespace std;
 
 class LoadingBelt {
   public:
-    LoadingBelt(string alphabet, string inputWord);
+    LoadingBelt(string alphabet);
 
     /**
      * Moves the head if symbol is equal to the current cell's element the
@@ -46,6 +46,10 @@ class LoadingBelt {
      * wasn't given (belt is empty).
      */
     bool isFinished();
+
+    void clear();
+
+    void reset(string inputWord);
 
   private:
     string belt;
