@@ -10,7 +10,3 @@ StateTransition State::getNextTransition() {
 bool State::moreTransitionsAvailable() {
   return indexOfNextTransition < transitions.size();
 }
-
-bool State::isSameState(std::string otherStateName) {
-  return stateName == otherStateName;
-}

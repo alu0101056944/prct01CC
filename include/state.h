@@ -2,10 +2,13 @@
  * Marcos Barrios
  * Complejidad Computacional ULL
  * 
- * States of the automata. Since it is an empty stack automata there won't be any
- *  final states.
- * It contains a set of transitions and each can be established as available or
- *  not available for exploration.
+ * Contains transitions and an index that points to the next transition that will
+ * be returned if requested. It is used by the Automata to keep track of the
+ * transitions that can be applied. Once all transitions have been returned the
+ * State is removed from the state history stack and rendered useless.
+ * 
+ * There are no final states because this implementation is an Emptyer Stack
+ * Automata. (Automata por vaciado de pila)
  * 
  * States are stacked during execution time as transitions are applied by the automata.
  *  Current state being executed is the one on top of the stack. As transitions are
@@ -24,9 +27,17 @@ class State {
   public:
     State(std::string stateName, std::vector<StateTransition> transitions);
     
+    /**
+     * Return the next transition that hasn't been applied.
+     * Used by Automata.
+     */
     StateTransition getNextTransition();
+
+    /**
+     * To avoid getting null transition objects, this function is called
+     * before getNextTransition()
+     */
     bool moreTransitionsAvailable();
-    bool isSameState(std::string otherStateName);
   private:
     std::string stateName;
     int indexOfNextTransition;

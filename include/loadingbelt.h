@@ -38,13 +38,23 @@ class LoadingBelt {
     void fallback();
 
     /**
-     * If an input word was given and head points at the following cell to the last
-     * cell containing the last character of the input word. Also if an input word
+     * Used to know if a word was successfully read.
+     * 
+     * Finished if an input word was given and head points beyond the last cell
+     * containing the last character of the input word. Also if an input word
      * wasn't given (belt is empty).
      */
     bool isFinished();
 
+    /**
+     * Clears the loading belt and fills it back with a new inputWord.
+     */
     void reset(std::string inputWord);
+
+    /**
+     * Automata needs to know if a transition can be applied or not. This function
+     * does exactly that; checks if symbol can be read.
+     */
     bool canRead(char symbol);
 
   private:

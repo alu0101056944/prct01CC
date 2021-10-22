@@ -15,7 +15,7 @@ void LoadingBelt::read(char symbol) {
   if (symbol != '.' && symbol == belt[indexOfHead]) {
     indexOfHead++;
   }
-  history.push(symbol);
+  history.push(symbol); // to keep track of changes
 }
 
 void LoadingBelt::fallback() {
@@ -36,5 +36,5 @@ bool LoadingBelt::isFinished() {
 void LoadingBelt::reset(std::string inputWord) {
   belt.clear();
   indexOfHead = 0;
-  belt.append(inputWord);
+  belt.append(inputWord); // Since it is a string, just clear then append
 }
