@@ -106,28 +106,6 @@ CMakeFiles/Assignment1.dir/src/automata.cc.obj: ../src/automata.cc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_stack.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
   ../include/loadingbelt.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ostream \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ios \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ios_base.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/system_error \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/error_constants.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/streambuf \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_facets.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwctype \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_base.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_inline.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_facets.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/istream \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc \
   ../include/statetransition.h \
   ../include/statefactory.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/unordered_map \
@@ -135,6 +113,7 @@ CMakeFiles/Assignment1.dir/src/automata.cc.obj: ../src/automata.cc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h \
@@ -654,28 +633,6 @@ CMakeFiles/Assignment1.dir/src/stack.cc.obj: ../src/stack.cc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/deque.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_stack.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ostream \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ios \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ios_base.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/system_error \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/error_constants.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/streambuf \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_facets.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwctype \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_base.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_inline.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_facets.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream.tcc \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/istream \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/algorithm \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h \
@@ -684,7 +641,8 @@ CMakeFiles/Assignment1.dir/src/stack.cc.obj: ../src/stack.cc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept
 
 CMakeFiles/Assignment1.dir/src/state.cc.obj: ../src/state.cc \
   ../include/state.h \
@@ -1253,6 +1211,30 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h:
 
 ../include/loadingbelt.h:
 
+../include/statefactory.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h:
+
+../src/filereader.cc:
+
+../include/filereader.h:
+
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iostream:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ostream:
@@ -1262,8 +1244,6 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/system_error:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/error_constants.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/streambuf:
 
@@ -1282,28 +1262,6 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_inline.h:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream.tcc:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc:
-
-../include/statefactory.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h:
-
-../src/filereader.cc:
-
-../include/filereader.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h:
 

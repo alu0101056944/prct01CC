@@ -1,6 +1,5 @@
 #include "../include/stack.h"
 
-#include <iostream>
 #include <algorithm>
 #include <stdexcept>
 
@@ -16,7 +15,6 @@ void Stack::push(string symbols) {
       throw logic_error{"Attempt push of non-alphabet character into stack"};
     }
     if (symbols[i] != '.') {
-      cout << "pushed " << symbols[i] << endl;
       stack.push(symbols[i]);
     }
     history.push(symbols[i]);
@@ -32,7 +30,6 @@ void Stack::pop(char symbol) {
     throw logic_error{"Attempt push of non-alphabet character into stack"};
   }
   if (stack.top() == symbol) {
-    cout << "popped" << symbol << ", size: " << stack.size() << endl;
     stack.pop();
   }
 }

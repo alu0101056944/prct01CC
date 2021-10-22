@@ -2,12 +2,14 @@
 
 Marcos Jesús Barrios Lorenzo
 
+Automata por vaciado de pila.
+
 - [Estructura](#structure)
 
-#### This repository is structured the following way
+#### This repository is structured as follows
 
 ```
-    |- doc Documentation of source code
     |- include Header files of source code
     |- src Source code files
+    |- build executable and compilation files
 ```

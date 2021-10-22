@@ -95,28 +95,6 @@ CMakeFiles/Assignment1.dir/src/automata.cc.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\loadingbelt.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\error_constants.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\streambuf \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\streambuf.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cwctype \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\ctype_base.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\streambuf_iterator.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\ctype_inline.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\statetransition.h \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\statefactory.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
@@ -124,6 +102,7 @@ CMakeFiles/Assignment1.dir/src/automata.cc.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_relops.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\aligned_buffer.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \

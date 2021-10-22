@@ -1,6 +1,11 @@
 /**
  * Marcos Barrios
  * Complejidad Computacional
+ * 
+ * Automata por vaciado de pila.
+ * 
+ * This is the main file where the terminal inputs are processed. It needs to be given
+ * a file path as first argument.
  */
 
 #include <vector>
@@ -10,17 +15,14 @@
 #include "../include/statefactory.h"
 #include "../include/automata.h"
 
-void callValidate(Automata& a) {
+void callValidate(FileReader& fileReader) {
+  Automata a(fileReader.beltAlphabet(), fileReader.stackAlphabet(),
+        fileReader.initialStackSymbol());
   cout << "Type the word to be recognized: " << endl;
-  string input = "ab";
-  //cin >> input;
-  bool isRecognized = a.validate(input);
-  if(isRecognized) {
-    cout << "true" << endl;
-  } else {
-    cout << "false" << endl;
-  }
-  cout << "Recognition: " << isRecognized << endl;
+  string input = "";
+  cin >> input;
+  cout << (a.validate(input) ? "Recognized" : "Not recognized");
+  cout << endl;
 }
 
 int main(int, char** argv) {
@@ -29,10 +31,9 @@ int main(int, char** argv) {
   vector<vector<string>> tr = fileReader.transitions();
   StateFactory stateFactory(fileReader.numberOfStates(),
         fileReader.initialState(), tr);
-  Automata a(fileReader.beltAlphabet(), fileReader.stackAlphabet(),
-        fileReader.initialStackSymbol());
-  callValidate(a);
-  /* char choice;
+  callValidate(fileReader);
+  
+  char choice;
   bool programOn = true;
   while (programOn != false) {
       cout << endl;
@@ -47,12 +48,12 @@ int main(int, char** argv) {
           programOn = false;
           break;
         case 'i':
-          callValidate(a);
+          callValidate(fileReader); // validar cadena
           break;
         default:
           cout << "Invalid option, please try again. " << endl;
           cin >> choice;
           break;
       }
-  } */
+  }
 }
