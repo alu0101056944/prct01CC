@@ -10,14 +10,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj.d"
   "CMakeFiles/Assignment1.dir/src/main.cc.obj"
   "CMakeFiles/Assignment1.dir/src/main.cc.obj.d"
-  "CMakeFiles/Assignment1.dir/src/stack.cc.obj"
-  "CMakeFiles/Assignment1.dir/src/stack.cc.obj.d"
   "CMakeFiles/Assignment1.dir/src/state.cc.obj"
   "CMakeFiles/Assignment1.dir/src/state.cc.obj.d"
   "CMakeFiles/Assignment1.dir/src/statefactory.cc.obj"
   "CMakeFiles/Assignment1.dir/src/statefactory.cc.obj.d"
   "CMakeFiles/Assignment1.dir/src/statetransition.cc.obj"
   "CMakeFiles/Assignment1.dir/src/statetransition.cc.obj.d"
+  "CMakeFiles/Assignment1.dir/src/symbolstack.cc.obj"
+  "CMakeFiles/Assignment1.dir/src/symbolstack.cc.obj.d"
   "libAssignment1.dll.a"
 )
 

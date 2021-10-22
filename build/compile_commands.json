@@ -31,8 +31,8 @@
 },
 {
   "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\stack.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\stack.cc",
-  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/stack.cc"
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\Assignment1.dir\\src\\symbolstack.cc.obj -c D:\\Educacion\\Universidad\\ULL\\Tercera_matriculacion\\Complejidad_computacional\\Practica1\\Proyecto\\src\\symbolstack.cc",
+  "file": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/symbolstack.cc"
 },
 {
   "directory": "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/build",

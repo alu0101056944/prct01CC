@@ -32,23 +32,21 @@
 
 #include <string>
 
-#include "../include/state.h"
-#include "../include/stack.h"
-#include "../include/loadingbelt.h"
-
-using namespace std;
+#include "./state.h"
+#include "./symbolstack.h"
+#include "./loadingbelt.h"
 
 class Automata {
   public:
-    Automata(string beltAlphabet, string stackAlphabet, char initialStackSym);
+    Automata(std::string beltAlphabet, std::string stackAlphabet, char initialStackSym);
 
-    bool validate(string inputWord);
+    bool validate(std::string inputWord);
   private:
-    stack<State> stateHistory;
-    Stack stack;
+    std::stack<State> stateHistory;
+    SymbolStack stack;
     LoadingBelt loadingBelt;
-    string beltAlphabet;
-    string stackAlphabet;
+    std::string beltAlphabet;
+    std::string stackAlphabet;
     char initialStackSym;
 };
 #endif

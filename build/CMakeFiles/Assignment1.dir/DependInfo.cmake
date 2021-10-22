@@ -12,10 +12,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/filereader.cc" "CMakeFiles/Assignment1.dir/src/filereader.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/filereader.cc.obj.d"
   "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/loadingbelt.cc" "CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/loadingbelt.cc.obj.d"
   "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/main.cc" "CMakeFiles/Assignment1.dir/src/main.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/main.cc.obj.d"
-  "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/stack.cc" "CMakeFiles/Assignment1.dir/src/stack.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/stack.cc.obj.d"
   "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/state.cc" "CMakeFiles/Assignment1.dir/src/state.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/state.cc.obj.d"
   "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/statefactory.cc" "CMakeFiles/Assignment1.dir/src/statefactory.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/statefactory.cc.obj.d"
   "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/statetransition.cc" "CMakeFiles/Assignment1.dir/src/statetransition.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/statetransition.cc.obj.d"
+  "D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/symbolstack.cc" "CMakeFiles/Assignment1.dir/src/symbolstack.cc.obj" "gcc" "CMakeFiles/Assignment1.dir/src/symbolstack.cc.obj.d"
   )
 
 # Targets to which this target links.

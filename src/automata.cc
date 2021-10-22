@@ -5,9 +5,8 @@
 #include "../include/state.h"
 
 #include <stack>
-using namespace std;
 
-Automata::Automata(string beltAlphabet, string stackAlphabet,
+Automata::Automata(std::string beltAlphabet, std::string stackAlphabet,
     char initialStackSym) :
     beltAlphabet(beltAlphabet),
     stackAlphabet(stackAlphabet),
@@ -19,7 +18,7 @@ Automata::Automata(string beltAlphabet, string stackAlphabet,
  * Use a state stack to keep track of states, each of which has a list
  * of transitions and know which transitions have been applied to it.
  */
-bool Automata::validate(string inputWord) {
+bool Automata::validate(std::string inputWord) {
   stack.clear();
   loadingBelt.clear();
   loadingBelt.reset(inputWord);

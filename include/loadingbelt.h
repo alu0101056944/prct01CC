@@ -20,11 +20,9 @@
 #include <stack>
 #include <string>
 
-using namespace std;
-
 class LoadingBelt {
   public:
-    LoadingBelt(string alphabet);
+    LoadingBelt(std::string alphabet);
 
     /**
      * Moves the head if symbol is equal to the current cell's element the
@@ -49,14 +47,14 @@ class LoadingBelt {
 
     void clear();
 
-    void reset(string inputWord);
+    void reset(std::string inputWord);
 
     bool canRead(char symbol);
 
   private:
-    string belt;
-    string alphabet;
+    std::string belt;
+    std::string alphabet;
     int indexOfHead;
-    stack<char> history;
+    std::stack<char> history;
 };
 #endif

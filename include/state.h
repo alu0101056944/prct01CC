@@ -22,7 +22,7 @@
 
 class State {
   public:
-    State(int id, vector<StateTransition> transitions);
+    State(int id, std::vector<StateTransition> transitions);
     
     StateTransition getNextTransition();
     void print();
@@ -36,7 +36,7 @@ class State {
   private:
     int id;
     int indexOfNextTransition;
-    vector<StateTransition> transitions;
+    std::vector<StateTransition> transitions;
 };
 
 #endif

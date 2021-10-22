@@ -1,7 +1,7 @@
 #include "../include/statetransition.h"
 
 StateTransition::StateTransition(char beltSymbol, char stackSymbolToPop,
-    string stackSymbolsToInsert, int nextState) :
+    std::string stackSymbolsToInsert, int nextState) :
     beltSymbol(beltSymbol),
     stackSymbolToPop(stackSymbolToPop),
     stackSymbolsToInsert(stackSymbolsToInsert),
@@ -15,7 +15,7 @@ char StateTransition::getStackSymbolToPop() {
   return stackSymbolToPop;
 }
 
-string StateTransition::getStackSymbolsToInsert() {
+std::string StateTransition::getStackSymbolsToInsert() {
   return stackSymbolsToInsert;
 }
 

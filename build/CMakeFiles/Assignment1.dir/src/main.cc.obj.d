@@ -121,8 +121,7 @@ CMakeFiles/Assignment1.dir/src/main.cc.obj: \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\state.h \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\statetransition.h \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\automata.h \
- d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\state.h \
- d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\stack.h \
+ d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\symbolstack.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\deque \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_deque.h \

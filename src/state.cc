@@ -1,7 +1,7 @@
 #include "../include/state.h"
 
 #include <iostream>
-State::State(int id, vector<StateTransition> transitions) : 
+State::State(int id, std::vector<StateTransition> transitions) : 
     id(id), indexOfNextTransition(0), transitions(transitions) {}
 
 StateTransition State::getNextTransition() {
@@ -25,6 +25,7 @@ State State::copy() {
 }
 
 void State::print() {
+  using namespace std;
   for (int i = 0; i < transitions.size(); i++) {
     cout << transitions[i].getBeltSymbol() << " ";
     cout << transitions[i].getNextState() << " ";

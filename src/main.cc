@@ -16,6 +16,7 @@
 #include "../include/automata.h"
 
 void callValidate(FileReader& fileReader) {
+  using namespace std;
   Automata a(fileReader.beltAlphabet(), fileReader.stackAlphabet(),
         fileReader.initialStackSymbol());
   cout << "Type the word to be recognized: " << endl;
@@ -26,9 +27,10 @@ void callValidate(FileReader& fileReader) {
 }
 
 int main(int, char** argv) {
+  using namespace std;
   FileReader fileReader;
   fileReader.readFile("../bin/APv.txt");
-  vector<vector<string>> tr = fileReader.transitions();
+  std::vector<vector<std::string>> tr = fileReader.transitions();
   StateFactory stateFactory(fileReader.numberOfStates(),
         fileReader.initialState(), tr);
   callValidate(fileReader);

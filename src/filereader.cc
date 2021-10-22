@@ -1,6 +1,5 @@
 #include "../include/filereader.h"
 
-#include <iostream>
 #include <fstream>
 #include <sstream>
 #include <algorithm>
@@ -14,9 +13,9 @@ FileReader::FileReader() {}
  *  character. Trim the result to get only the useful words with spaces
  *  only in between them.
  */
-void FileReader::readFile(string path) {
-  ifstream inFile(path);
-  string line;
+void FileReader::readFile(std::string path) {
+  std::ifstream inFile(path);
+  std::string line;
   while (getline(inFile, line)) {
       int amountOfUsefulCharacters = 0;
       for (int i = 0; i < line.size(); i++) {
@@ -26,7 +25,7 @@ void FileReader::readFile(string path) {
           break;
         }
       }
-      string usefulString = line.substr(0, amountOfUsefulCharacters);
+      std::string usefulString = line.substr(0, amountOfUsefulCharacters);
       trim(usefulString);
       if (usefulString.size() > 0) {
         fileContent.push_back(usefulString);
@@ -41,8 +40,8 @@ void FileReader::readFile(string path) {
  * Use a lambda to check each character from the right that are not space, the
  *  ones that are get removed from the string.
  */
-void FileReader::trim(string& stringToTrim) {
-    stringToTrim.erase(find_if(stringToTrim.rbegin(), stringToTrim.rend(), 
+void FileReader::trim(std::string& stringToTrim) {
+    stringToTrim.erase(std::find_if(stringToTrim.rbegin(), stringToTrim.rend(), 
         [](unsigned char ch) {
           return !std::isspace(ch);
         }
@@ -54,9 +53,9 @@ void FileReader::trim(string& stringToTrim) {
  * Asssumes first line of fileContent vector contains the state names.
  */
 int FileReader::numberOfStates() {
-  vector<string> words;
-  stringstream ss(fileContent[0]);
-  string word;
+  std::vector<std::string> words;
+  std::stringstream ss(fileContent[0]);
+  std::string word;
   while(getline(ss, word, ' ')) {
     words.push_back(word);
   }
@@ -66,10 +65,10 @@ int FileReader::numberOfStates() {
 /**
  * Assume second line of fileContent is the belt alphabet.
  */
-string FileReader::beltAlphabet() {
-  string alphabet = "";
-  stringstream ss(fileContent[1]);
-  string word;
+std::string FileReader::beltAlphabet() {
+  std::string alphabet = "";
+  std::stringstream ss(fileContent[1]);
+  std::string word;
   while(getline(ss, word, ' ')) {
     alphabet.append(word);
   }
@@ -79,10 +78,10 @@ string FileReader::beltAlphabet() {
 /**
  * Assume third line of fileContent is the stack alphabet.
  */
-string FileReader::stackAlphabet() {
-  string alphabet = "";
-  stringstream ss(fileContent[2]);
-  string word;
+std::string FileReader::stackAlphabet() {
+  std::string alphabet = "";
+  std::stringstream ss(fileContent[2]);
+  std::string word;
   while(getline(ss, word, ' ')) {
     alphabet.append(word);
   }
@@ -95,7 +94,7 @@ string FileReader::stackAlphabet() {
  * the initial state.
  */
 int FileReader::initialState() {
-  return stoi(fileContent[3].erase(0, 1)); // remove the q and keep the number
+  return std::stoi(fileContent[3].erase(0, 1)); // remove the q and keep the number
 }
 
 /**
@@ -111,7 +110,8 @@ char FileReader::initialStackSymbol() {
  * Any number of transitions is stored in a vector, where each element is at
  *  the same time another vector whose elements are the values of the transition.
  */
-vector<vector<string>> FileReader::transitions() {
+std::vector<std::vector<std::string>> FileReader::transitions() {
+  using namespace std;
   vector<vector<string>> transitions;
   for (int i = 5; i < fileContent.size(); i++) { // There's always 6 lines at least
     vector<string> transition;

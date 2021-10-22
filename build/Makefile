@@ -240,30 +240,6 @@ src/main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
-src/stack.obj: src/stack.cc.obj
-.PHONY : src/stack.obj
-
-# target to build an object file
-src/stack.cc.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/stack.cc.obj
-.PHONY : src/stack.cc.obj
-
-src/stack.i: src/stack.cc.i
-.PHONY : src/stack.i
-
-# target to preprocess a source file
-src/stack.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/stack.cc.i
-.PHONY : src/stack.cc.i
-
-src/stack.s: src/stack.cc.s
-.PHONY : src/stack.s
-
-# target to generate assembly for a file
-src/stack.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/stack.cc.s
-.PHONY : src/stack.cc.s
-
 src/state.obj: src/state.cc.obj
 .PHONY : src/state.obj
 
@@ -336,6 +312,30 @@ src/statetransition.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/statetransition.cc.s
 .PHONY : src/statetransition.cc.s
 
+src/symbolstack.obj: src/symbolstack.cc.obj
+.PHONY : src/symbolstack.obj
+
+# target to build an object file
+src/symbolstack.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/symbolstack.cc.obj
+.PHONY : src/symbolstack.cc.obj
+
+src/symbolstack.i: src/symbolstack.cc.i
+.PHONY : src/symbolstack.i
+
+# target to preprocess a source file
+src/symbolstack.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/symbolstack.cc.i
+.PHONY : src/symbolstack.cc.i
+
+src/symbolstack.s: src/symbolstack.cc.s
+.PHONY : src/symbolstack.s
+
+# target to generate assembly for a file
+src/symbolstack.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Assignment1.dir\build.make CMakeFiles/Assignment1.dir/src/symbolstack.cc.s
+.PHONY : src/symbolstack.cc.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -358,9 +358,6 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/stack.obj
-	@echo ... src/stack.i
-	@echo ... src/stack.s
 	@echo ... src/state.obj
 	@echo ... src/state.i
 	@echo ... src/state.s
@@ -370,6 +367,9 @@ help:
 	@echo ... src/statetransition.obj
 	@echo ... src/statetransition.i
 	@echo ... src/statetransition.s
+	@echo ... src/symbolstack.obj
+	@echo ... src/symbolstack.i
+	@echo ... src/symbolstack.s
 .PHONY : help
 
 

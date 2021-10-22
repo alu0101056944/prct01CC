@@ -21,8 +21,6 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 class FileReader {
   public:
     FileReader();
@@ -31,19 +29,19 @@ class FileReader {
      * Obtain the file contents without the comments and extra spaces. Only
      * spaces between words are kept.
      */
-    void readFile(string path);
+    void readFile(std::string path);
 
     int numberOfStates();
-    string beltAlphabet();
-    string stackAlphabet();
+    std::string beltAlphabet();
+    std::string stackAlphabet();
     int initialState();
     char initialStackSymbol();
-    vector<vector<string>> transitions();
+    std::vector<std::vector<std::string>> transitions();
   private:
-    vector<string> fileContent;
+    std::vector<std::string> fileContent;
 
     // Used on readFile() to remove unnecessary spaces.
-    void trim(string& stringToTrim);
+    void trim(std::string& stringToTrim);
 };
 
 #endif

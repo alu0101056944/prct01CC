@@ -3,14 +3,14 @@
 #include <iostream>
 #include <algorithm>
 
-LoadingBelt::LoadingBelt(string alphabet) :
+LoadingBelt::LoadingBelt(std::string alphabet) :
     alphabet(alphabet),
     indexOfHead(0) {}
 
 void LoadingBelt::read(char symbol) {
   if(find(alphabet.begin(), alphabet.end(), symbol) == alphabet.end()) {
     // alphabet doesn't contain symbol[i]
-    throw logic_error{"Attempt read of non-alphabet character on loading belt"};
+    throw std::logic_error{"Attempt read of non-alphabet character on loading belt"};
   }
   if (symbol != '.' && symbol == belt[indexOfHead]) {
     indexOfHead++;
@@ -33,7 +33,7 @@ bool LoadingBelt::isFinished() {
   return belt.size() == 0 || belt.size() > 0 && indexOfHead == belt.size();
 }
 
-void LoadingBelt::reset(string inputWord) {
+void LoadingBelt::reset(std::string inputWord) {
   belt = inputWord;
 }
 

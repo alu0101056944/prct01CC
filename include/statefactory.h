@@ -17,12 +17,11 @@
 #include "./state.h"
 #include "./statetransition.h"
 
-using namespace std;
 
 class StateFactory {
   public:
     StateFactory(int numberOfStates, int initialState,
-        vector<vector<string>>& transitions);
+        std::vector<std::vector<std::string>>& transitions);
 
     /**
      * Obtain a new state instance from any state used in the current automata.
@@ -33,11 +32,12 @@ class StateFactory {
      * Reassign the possible transitions - id pairs so that each time a new
      * automata needs to be formed this can be called.
      */
-    void resetAutomata(int numberOfStates, int initialState, vector<vector<string>>& transitions);
+    void resetAutomata(int numberOfStates, int initialState,
+        std::vector<std::vector<std::string>>& transitions);
 
     static int initialState;
   private:
-    static unordered_map<int, vector<StateTransition>> availableStates;
+    static std::unordered_map<int, std::vector<StateTransition>> availableStates;
 };
 
 #endif

@@ -18,17 +18,15 @@
 #include <vector>
 #include <stack>
 
-using namespace std;
-
-class Stack {
+class SymbolStack {
   public:
-    Stack(char initialSym, string alphabet);
+    SymbolStack(char initialSym, std::string alphabet);
 
     /**
      * Pushes a set of chars (string). Throw exception if it attempts to push a
      *  character that is not on the stack alphabet.
      */
-    void push(string symbols);
+    void push(std::string symbols);
 
     /**
      * Throws exception if stack doesn't have that char on top or if it's empty.
@@ -39,8 +37,8 @@ class Stack {
     void fallback();
     bool canPop(char symbol);
   private:
-    stack<char> stack, history;
-    string alphabet;
+    std::stack<char> stack, history;
+    std::string alphabet;
     char initialSym;
 };
 

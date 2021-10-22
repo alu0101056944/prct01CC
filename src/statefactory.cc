@@ -5,11 +5,11 @@
 
 
 StateFactory::StateFactory(int numberOfStates, int initialState,
-    vector<vector<string>>& transitions) {
+    std::vector<std::vector<std::string>>& transitions) {
   resetAutomata(numberOfStates, initialState, transitions);
 }
 
-unordered_map<int, vector<StateTransition>> StateFactory::availableStates;
+std::unordered_map<int, std::vector<StateTransition>> StateFactory::availableStates;
 
 int StateFactory::initialState = 0;
 
@@ -24,17 +24,17 @@ int StateFactory::initialState = 0;
  *  corresponding available state's transitions vector.
  */
 void StateFactory::resetAutomata(int numberOfStates, int initialState,
-     vector<vector<string>>& transitions) {
+     std::vector<std::vector<std::string>>& transitions) {
   availableStates.clear();
   for (int i = 0; i < numberOfStates; i++) { //initialize possible states
-    availableStates.insert({i, vector<StateTransition>()});
+    availableStates.insert({i, std::vector<StateTransition>()});
   }
   StateFactory::initialState = initialState;
 
   for(int i = 0; i < transitions.size(); i++) {
     char beltSymbol = transitions[i][1][0]; // only has one character
     char stackSymbolToPop = transitions[i][2][0]; // only has one character
-    string stackSymbolsToInsert = "";
+    std::string stackSymbolsToInsert = "";
     for(int j = 4; j < transitions[i].size(); j++) { // append all the symbols to be inserted
       stackSymbolsToInsert.append(transitions[i][j]);
     }
@@ -50,7 +50,7 @@ void StateFactory::resetAutomata(int numberOfStates, int initialState,
 State StateFactory::createState(int id) {
   if (id == -1) {
     // for null transitions that allow me to avoid conditionals
-    return State(-1, vector<StateTransition>());
+    return State(-1, std::vector<StateTransition>());
   }
   return State(id, availableStates[id]);
 }
