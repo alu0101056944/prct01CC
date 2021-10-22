@@ -31,8 +31,7 @@ int main(int, char** argv) {
   FileReader fileReader;
   fileReader.readFile("../bin/APv.txt");
   std::vector<vector<std::string>> tr = fileReader.transitions();
-  StateFactory stateFactory(fileReader.numberOfStates(),
-        fileReader.initialState(), tr);
+  StateFactory stateFactory(fileReader.initialState(), tr);
   callValidate(fileReader);
   
   char choice;

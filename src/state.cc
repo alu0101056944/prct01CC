@@ -1,7 +1,7 @@
 #include "../include/state.h"
 
-State::State(int id, std::vector<StateTransition> transitions) : 
-    id(id), indexOfNextTransition(0), transitions(transitions) {}
+State::State(std::string stateName, std::vector<StateTransition> transitions) : 
+    stateName(stateName), indexOfNextTransition(0), transitions(transitions) {}
 
 StateTransition State::getNextTransition() {
   return transitions[indexOfNextTransition++];
@@ -11,6 +11,6 @@ bool State::moreTransitionsAvailable() {
   return indexOfNextTransition < transitions.size();
 }
 
-bool State::isSameState(int idOfOtherState) {
-  return id == idOfOtherState;
+bool State::isSameState(std::string otherStateName) {
+  return stateName == otherStateName;
 }

@@ -19,7 +19,7 @@ void SymbolStack::push(std::string symbols) {
     }
     history.push(symbols[i]);
   }
-}
+} 
 
 void SymbolStack::pop(char symbol) {
   if (stack.empty()) {
