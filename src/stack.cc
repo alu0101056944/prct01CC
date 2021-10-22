@@ -16,6 +16,7 @@ void Stack::push(string symbols) {
       throw logic_error{"Attempt push of non-alphabet character into stack"};
     }
     if (symbols[i] != '.') {
+      cout << "pushed " << symbols[i] << endl;
       stack.push(symbols[i]);
     }
     history.push(symbols[i]);
@@ -31,6 +32,7 @@ void Stack::pop(char symbol) {
     throw logic_error{"Attempt push of non-alphabet character into stack"};
   }
   if (stack.top() == symbol) {
+    cout << "popped" << symbol << ", size: " << stack.size() << endl;
     stack.pop();
   }
 }
@@ -43,9 +45,11 @@ void Stack::clear() {
 }
 
 void Stack::fallback() {
-  while(!history.empty()) {
-    stack.pop();
-  }
+  history.pop();
+}
+
+bool Stack::canPop(char symbol) {
+  return stack.top() == symbol && !stack.empty();
 }
 
 bool Stack::empty() {

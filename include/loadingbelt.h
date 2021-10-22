@@ -51,6 +51,8 @@ class LoadingBelt {
 
     void reset(string inputWord);
 
+    bool canRead(char symbol);
+
   private:
     string belt;
     string alphabet;

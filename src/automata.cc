@@ -19,40 +19,38 @@ Automata::Automata(string beltAlphabet, string stackAlphabet,
 /**
  * Use a state stack to keep track of states, each of which has a list
  * of transitions and know which transitions have been applied to it.
- * 
- * After each transition depending on if the state is the same or not I
- * create a new fresh state instance or I copy an existing state, which
- * will have the same transitions available than the previous state stack
- * top.
  */
 bool Automata::validate(string inputWord) {
   stack.clear();
   loadingBelt.clear();
   loadingBelt.reset(inputWord);
+
   stateHistory.push(StateFactory::createState(StateFactory::initialState));
-  while(!stack.empty()) {
+  while(!stack.empty() && !stateHistory.empty()) {
+    if (!stack.empty()) cout << "non enmpty stack" << endl;
+    if (!stateHistory.empty()) cout << "non empty state history" << endl;
     if (stateHistory.top().moreTransitionsAvailable()) {
       StateTransition transition = stateHistory.top().getNextTransition();
-      loadingBelt.read(transition.getBeltSymbol());
-      stack.push(transition.getStackSymbolsToInsert());
-      stack.pop(transition.getStackSymbolToPop());
-      cout << "transition: " << transition.getBeltSymbol() << ", " << transition.getStackSymbolToPop() << ", " << transition.getStackSymbolsToInsert() << endl;
-      int nextState = transition.getNextState();
-      cout << "nextState: " << nextState << endl;
-      if (stateHistory.top().isSameState(nextState)) {
-        cout << "existing state " << endl;
-        stateHistory.push(stateHistory.top().copy());
-      } else {
-        cout << "fresh state " << endl;
+      char stackSymbolToPop = transition.getStackSymbolToPop();
+      char beltSymbolToRead = transition.getBeltSymbol();
+      cout << "Checking transition: " << beltSymbolToRead << ", " << stackSymbolToPop << ", " << transition.getStackSymbolsToInsert() << endl;
+
+      if(!stack.canPop(stackSymbolToPop)) cout << "can't pop" << endl;
+      if(!loadingBelt.canRead(beltSymbolToRead)) cout << "can't read" << endl;
+      if(stack.canPop(stackSymbolToPop) && loadingBelt.canRead(beltSymbolToRead)) {
+        loadingBelt.read(beltSymbolToRead);
+        stack.pop(stackSymbolToPop);
+        stack.push(transition.getStackSymbolsToInsert());
+        cout << "applied transition: " << beltSymbolToRead << ", " << stackSymbolToPop << ", " << transition.getStackSymbolsToInsert() << endl;
         stateHistory.push(StateFactory::createState(transition.getNextState()));
+        cout << "new state: " << transition.getNextState() << endl << endl;
       }
-      cout << endl;
     } else {
-      cout << "fallback" << endl;
       stack.fallback();
       loadingBelt.fallback();
       stateHistory.pop();
     }
+    cout << "next itr" << endl;
   }
   return loadingBelt.isFinished();
 }

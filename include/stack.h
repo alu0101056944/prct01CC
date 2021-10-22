@@ -37,6 +37,7 @@ class Stack {
     bool empty();
     void clear();
     void fallback();
+    bool canPop(char symbol);
   private:
     stack<char> stack, history;
     string alphabet;

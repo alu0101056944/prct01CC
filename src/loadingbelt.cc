@@ -12,18 +12,21 @@ void LoadingBelt::read(char symbol) {
     // alphabet doesn't contain symbol[i]
     throw logic_error{"Attempt read of non-alphabet character on loading belt"};
   }
-  if (symbol != '.' && !isFinished() && symbol == belt[indexOfHead]) {
+  if (symbol != '.' && symbol == belt[indexOfHead]) {
     indexOfHead++;
-    history.push(symbol);
   }
+  history.push(symbol);
 }
 
 void LoadingBelt::fallback() {
-  while(!history.empty()) {
-    if (history.top() != '.') {
-      indexOfHead--;
-    }
+  if (!history.empty() && history.top() != '.') {
+    indexOfHead--;
   }
+  history.pop();
+}
+
+bool LoadingBelt::canRead(char symbol) {
+  return !isFinished() && belt[indexOfHead] == symbol || belt[indexOfHead] == '.';
 }
 
 bool LoadingBelt::isFinished() {
