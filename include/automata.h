@@ -35,7 +35,6 @@
 #include "../include/state.h"
 #include "../include/stack.h"
 #include "../include/loadingbelt.h"
-#include "../include/statetransitioner.h"
 
 using namespace std;
 
@@ -46,9 +45,9 @@ class Automata {
 
     bool validate(string inputWord);
   private:
+    stack<State> stateHistory;
     Stack stack;
     LoadingBelt loadingBelt;
-    StateTransitioner stateTransitioner;
     string beltAlphabet;
     string stackAlphabet;
     char initialStackSym;

@@ -25,8 +25,8 @@ class State {
     State(int id, vector<StateTransition> transitions);
     
     StateTransition getNextTransition();
-    bool nonAppliedTransitions();
     void print();
+    bool moreTransitionsAvailable();
   private:
     int id;
     int indexOfNextTransition;

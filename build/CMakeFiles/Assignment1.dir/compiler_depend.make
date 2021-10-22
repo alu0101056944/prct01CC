@@ -106,8 +106,20 @@ CMakeFiles/Assignment1.dir/src/automata.cc.obj: ../src/automata.cc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_stack.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
   ../include/loadingbelt.h \
-  ../include/statetransitioner.h \
-  ../include/statetransition.h
+  ../include/statetransition.h \
+  ../include/statefactory.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/unordered_map \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h \
+  ../include/state.h \
+  ../include/state.h
 
 CMakeFiles/Assignment1.dir/src/filereader.cc.obj: ../src/filereader.cc \
   ../include/filereader.h \
@@ -1169,7 +1181,25 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h:
 
 ../include/loadingbelt.h:
 
-../include/statetransitioner.h:
+../include/statefactory.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h:
 
 ../src/filereader.cc:
 
@@ -1184,8 +1214,6 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/system_error:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/error_constants.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/streambuf:
 
@@ -1213,10 +1241,6 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/sstream:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/sstream.tcc:
 
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h:
-
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algo.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h:
@@ -1236,20 +1260,6 @@ C:/MinGW/include/strings.h:
 ../src/loadingbelt.cc:
 
 ../src/main.cc:
-
-../include/statefactory.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h:
-
-C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h:
 
 ../src/stack.cc:
 

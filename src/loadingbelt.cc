@@ -12,10 +12,8 @@ void LoadingBelt::read(char symbol) {
   if(find(alphabet.begin(), alphabet.end(), symbol) == alphabet.end()) {
     // alphabet doesn't contain symbol[i]
     throw logic_error{"Attempt read of non-alphabet character on loading belt"};
-  }else if (finished()) {
-    throw logic_error{"Read attempt but no symbols left to read from the loading belt."}; 
   }
-  if (symbol != '.' && symbol == belt[indexOfHead]) {
+  if (symbol != '.' && !isFinished() && symbol == belt[indexOfHead]) {
     indexOfHead++;
     history.push(symbol);
   }
@@ -29,6 +27,6 @@ void LoadingBelt::fallback() {
   }
 }
 
-bool LoadingBelt::finished() {
+bool LoadingBelt::isFinished() {
   return belt.size() == 0 || belt.size() > 0 && indexOfHead == belt.size();
 }

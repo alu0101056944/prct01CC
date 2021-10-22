@@ -39,13 +39,14 @@ class LoadingBelt {
      * aswell.
      */
     void fallback();
-    private:
-      /**
-       * If an input word was given and head points at the following cell to the last
-       * cell containing the last character of the input word. Also if an input word
-       * wasn't given (belt is empty).
-       */
-      bool finished();
+
+    /**
+     * If an input word was given and head points at the following cell to the last
+     * cell containing the last character of the input word. Also if an input word
+     * wasn't given (belt is empty).
+     */
+    bool isFinished();
+
   private:
     string belt;
     string alphabet;

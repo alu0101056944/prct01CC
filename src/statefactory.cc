@@ -48,5 +48,9 @@ void StateFactory::resetAutomata(int numberOfStates, int initialState,
 }
 
 State StateFactory::createState(int id) {
+  if (id == -1) {
+    // for null transitions that allow me to avoid conditionals
+    return State(-1, vector<StateTransition>());
+  }
   return State(id, availableStates[id]);
 }

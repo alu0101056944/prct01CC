@@ -95,5 +95,17 @@ CMakeFiles/Assignment1.dir/src/automata.cc.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_stack.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
  d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\loadingbelt.h \
- d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\statetransitioner.h \
- d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\statetransition.h
+ d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\statetransition.h \
+ d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\statefactory.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_relops.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\aligned_buffer.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
+ d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\state.h \
+ d:\educacion\universidad\ull\tercera_matriculacion\complejidad_computacional\practica1\proyecto\include\state.h

@@ -26,10 +26,10 @@ void Stack::pop(char symbol) {
       symbol != initialSym) {
     // alphabet doesn't contain symbol or initial symbol
     throw logic_error{"Attempt push of non-alphabet character into stack"};
-  } else if (stack.top() != symbol) {
-    throw logic_error{"Can't pop(symbol) because symbol isn't on top of the stack"};
   }
-  stack.pop();
+  if (stack.top() == symbol) {
+    stack.pop();
+  }
 }
 
 void Stack::fallback() {

@@ -8,7 +8,7 @@ StateTransition State::getNextTransition() {
   return transitions[indexOfNextTransition++];
 }
 
-bool State::nonAppliedTransitions() {
+bool State::moreTransitionsAvailable() {
   return indexOfNextTransition < transitions.size();
 }
 

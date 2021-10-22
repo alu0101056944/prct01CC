@@ -107,8 +107,20 @@ CMakeFiles/Assignment1.dir/src/automata.cc.obj
  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_stack.h
  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h
  D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/include/loadingbelt.h
- D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/include/statetransitioner.h
  D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/include/statetransition.h
+ D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/include/statefactory.h
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/unordered_map
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/stdexcept
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h
+ D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/include/state.h
+ D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/include/state.h
 
 CMakeFiles/Assignment1.dir/src/filereader.cc.obj
  D:/Educacion/Universidad/ULL/Tercera_matriculacion/Complejidad_computacional/Practica1/Proyecto/src/filereader.cc
