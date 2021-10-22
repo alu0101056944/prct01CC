@@ -34,9 +34,7 @@ bool LoadingBelt::isFinished() {
 }
 
 void LoadingBelt::reset(std::string inputWord) {
-  belt = inputWord;
-}
-
-void LoadingBelt::clear() {
   belt.clear();
+  indexOfHead = 0;
+  belt.append(inputWord);
 }

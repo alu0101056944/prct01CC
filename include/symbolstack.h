@@ -33,7 +33,7 @@ class SymbolStack {
      */
     void pop(char symbol);
     bool empty();
-    void clear();
+    void reset();
     void fallback();
     bool canPop(char symbol);
   private:

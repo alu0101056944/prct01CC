@@ -44,7 +44,6 @@ class LoadingBelt {
      */
     bool isFinished();
 
-    void clear();
     void reset(std::string inputWord);
     bool canRead(char symbol);
 

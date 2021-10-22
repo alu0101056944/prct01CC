@@ -34,10 +34,8 @@ void SymbolStack::pop(char symbol) {
   }
 }
 
-void SymbolStack::clear() {
-  for (int i = 0; i < stack.size(); i++) {
-    stack.pop();
-  }
+void SymbolStack::reset() {
+  stack = std::stack<char>();
   stack.push(initialSym);
 }
 

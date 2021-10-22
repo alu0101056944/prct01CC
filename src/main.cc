@@ -15,10 +15,8 @@
 #include "../include/statefactory.h"
 #include "../include/automata.h"
 
-void callValidate(FileReader& fileReader) {
+void callValidate(Automata& a) {
   using namespace std;
-  Automata a(fileReader.beltAlphabet(), fileReader.stackAlphabet(),
-        fileReader.initialStackSymbol());
   cout << "Type the word to be recognized: " << endl;
   string input = "";
   cin >> input;
@@ -32,6 +30,8 @@ int main(int, char** argv) {
   fileReader.readFile("../bin/APv.txt");
   std::vector<vector<std::string>> tr = fileReader.transitions();
   StateFactory stateFactory(fileReader.initialState(), tr);
+  Automata a(fileReader.beltAlphabet(), fileReader.stackAlphabet(),
+      fileReader.initialStackSymbol());
   
   char choice;
   bool programOn = true;
@@ -48,7 +48,7 @@ int main(int, char** argv) {
           programOn = false;
           break;
         case 'i':
-          callValidate(fileReader); // validar cadena
+          callValidate(a); // validar cadena
           break;
         default:
           cout << "Invalid option, please try again. " << endl;

@@ -26,9 +26,9 @@ Automata::Automata(std::string beltAlphabet, std::string stackAlphabet,
  * are removed from the top of the stack to explore other transition paths.
  */
 bool Automata::validate(std::string inputWord) {
-  stack.clear();
-  loadingBelt.clear();
+  stack.reset();
   loadingBelt.reset(inputWord);
+  stateHistory = std::stack<State>(); // clear state history
   stateHistory.push(StateFactory::createState(StateFactory::initialState));
   while(!stack.empty() && !stateHistory.empty()) {
     if (stateHistory.top().moreTransitionsAvailable()) {
