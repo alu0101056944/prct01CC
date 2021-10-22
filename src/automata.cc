@@ -17,20 +17,13 @@ Automata::Automata(string beltAlphabet, string stackAlphabet,
     loadingBelt(beltAlphabet) {}
 
 /**
- * Solo paro de ejecutar cuando la pila este vacia. Si la palabra es valida
- * entonces la pila se vaciara en el momento adecuado. Igual que si no es
- * valida entonces parara cuando no hayan transiciones pendientes por iterar,
- * en cuyo caso se considera que la palabra no es valida.
+ * Use a state stack to keep track of states, each of which has a list
+ * of transitions and know which transitions have been applied to it.
  * 
- * Puedo utilizar un objeto para controlar las transiciones de estados, que se
- * encargue de devolver cuando un estado sigue teniendo transiciones disponibles.
- * El problema esta en saber las transiciones disponibles. Quizas puede contener
- * un array de forma que sepa que transiciones han sido aplicadas. La ventaja es
- * que puedo mantener la clase estado tal como estaba, una simple clase contenedora
- * de informacion sobre estado y transiciones asignadas.
- * 
- * All transitions  of the states are applied instead of filtering them previosly but
- * the belt and stack won't change unless proper symbols are given.
+ * After each transition depending on if the state is the same or not I
+ * create a new fresh state instance or I copy an existing state, which
+ * will have the same transitions available than the previous state stack
+ * top.
  */
 bool Automata::validate(string inputWord) {
   stack.clear();
@@ -41,14 +34,21 @@ bool Automata::validate(string inputWord) {
     if (stateHistory.top().moreTransitionsAvailable()) {
       StateTransition transition = stateHistory.top().getNextTransition();
       loadingBelt.read(transition.getBeltSymbol());
-      cout << "b" << " belt: " << transition.getBeltSymbol() << endl;
       stack.push(transition.getStackSymbolsToInsert());
+      stack.pop(transition.getStackSymbolToPop());
+      cout << "transition: " << transition.getBeltSymbol() << ", " << transition.getStackSymbolToPop() << ", " << transition.getStackSymbolsToInsert() << endl;
       int nextState = transition.getNextState();
-      cout << "a" << transition.getStackSymbolsToInsert() << endl;
-      if (!stateHistory.top().isSameState(nextState)) {
+      cout << "nextState: " << nextState << endl;
+      if (stateHistory.top().isSameState(nextState)) {
+        cout << "existing state " << endl;
+        stateHistory.push(stateHistory.top().copy());
+      } else {
+        cout << "fresh state " << endl;
         stateHistory.push(StateFactory::createState(transition.getNextState()));
       }
+      cout << endl;
     } else {
+      cout << "fallback" << endl;
       stack.fallback();
       loadingBelt.fallback();
       stateHistory.pop();

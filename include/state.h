@@ -28,6 +28,10 @@ class State {
     void print();
     bool moreTransitionsAvailable();
     bool isSameState(int idOfOtherState);
+
+    /**
+     * Used for the stack history of the automata
+     */
     State copy();
   private:
     int id;

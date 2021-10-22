@@ -15,6 +15,11 @@ void callValidate(Automata& a) {
   string input = "ab";
   //cin >> input;
   bool isRecognized = a.validate(input);
+  if(isRecognized) {
+    cout << "true" << endl;
+  } else {
+    cout << "false" << endl;
+  }
   cout << "Recognition: " << isRecognized << endl;
 }
 
