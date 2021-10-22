@@ -1,6 +1,5 @@
 #include "../include/state.h"
 
-#include <iostream>
 State::State(int id, std::vector<StateTransition> transitions) : 
     id(id), indexOfNextTransition(0), transitions(transitions) {}
 
@@ -14,22 +13,4 @@ bool State::moreTransitionsAvailable() {
 
 bool State::isSameState(int idOfOtherState) {
   return id == idOfOtherState;
-}
-
-State State::copy() {
-  State copy(id, transitions);
-  for(int i = 0; i < indexOfNextTransition; i++) {
-    copy.getNextTransition();
-  }
-  return copy;
-}
-
-void State::print() {
-  using namespace std;
-  for (int i = 0; i < transitions.size(); i++) {
-    cout << transitions[i].getBeltSymbol() << " ";
-    cout << transitions[i].getNextState() << " ";
-    cout << " |pop: " << transitions[i].getStackSymbolToPop() << " ";
-    cout << transitions[i].getStackSymbolsToInsert() << endl;
-  }
 }

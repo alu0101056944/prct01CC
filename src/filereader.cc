@@ -49,20 +49,6 @@ void FileReader::trim(std::string& stringToTrim) {
 }
 
 /**
- * Get the amount of words in the string with the state names.
- * Asssumes first line of fileContent vector contains the state names.
- */
-int FileReader::numberOfStates() {
-  std::vector<std::string> words;
-  std::stringstream ss(fileContent[0]);
-  std::string word;
-  while(getline(ss, word, ' ')) {
-    words.push_back(word);
-  }
-  return words.size();
-}
-
-/**
  * Assume second line of fileContent is the belt alphabet.
  */
 std::string FileReader::beltAlphabet() {
@@ -89,12 +75,12 @@ std::string FileReader::stackAlphabet() {
 }
 
 /**
- * Assume second character of the line corresponding to the initial state
- * is the number of the initial state. Ex: 'q3' where 3 is the number of
- * the initial state.
+ * The 4th line will always be the initial state's name. The line won't have
+ * any comments or extra spaces since file content has already been processed
+ * when read.
  */
-int FileReader::initialState() {
-  return std::stoi(fileContent[3].erase(0, 1)); // remove the q and keep the number
+std::string FileReader::initialState() {
+  return fileContent[3];
 }
 
 /**
@@ -107,19 +93,22 @@ char FileReader::initialStackSymbol() {
 }
 
 /**
- * Any number of transitions is stored in a vector, where each element is at
- *  the same time another vector whose elements are the values of the transition.
+ * Assume 6th line is the first transition, so iterate fileContent's lines from
+ * there and split each line into words, then save it into a vector of vectors.
  */
 std::vector<std::vector<std::string>> FileReader::transitions() {
   using namespace std;
   vector<vector<string>> transitions;
+
   for (int i = 5; i < fileContent.size(); i++) { // There's always 6 lines at least
     vector<string> transition;
-    stringstream ss(fileContent[i]);
+
+    stringstream ss(fileContent[i]); // used to split into words
     string word;
     while(getline(ss, word, ' ')) {
       transition.push_back(word);
     }
+
     transitions.push_back(transition);
   }
   return transitions;
