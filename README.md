@@ -22,4 +22,4 @@ Automata por vaciado de pila. No se ha implementado el requisito opcional de mod
 
 First, <code>main.cc</code> uses a *FileReader* to build a *StateFactory*. The latest allows concise creation of *State* objects which contain  *StateTransition* objects that store the transition info. Both *SymbolStack* and *LoadingBelt* are used by Automata to recognize the input word with an algorithm that keeps a state history stack and takes advantage of each state's capability to remember it's applied transitions.
 
-![architecture](https://user-images.githubusercontent.com/72827537/138529647-ab8b6fa9-4b9f-48cd-87cf-f964692a1362.png)
+![architecture](assets/architecture.png)
