@@ -32,7 +32,6 @@ int main(int, char** argv) {
   fileReader.readFile("../bin/APv.txt");
   std::vector<vector<std::string>> tr = fileReader.transitions();
   StateFactory stateFactory(fileReader.initialState(), tr);
-  callValidate(fileReader);
   
   char choice;
   bool programOn = true;

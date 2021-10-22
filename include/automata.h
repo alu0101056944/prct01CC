@@ -6,9 +6,8 @@
  *  word if the stack is emptied and the whole word has been successfully read
  *  from the loading belt.
  * 
- * It accepts a given input word, stored
- * on the loading belt, if the stack is empty and the loading belt has been
- * fully readed.
+ * It accepts a given input word, stored on the loading belt, if the stack is
+ * empty and the loading belt has been fully readed.
  * 
  * Defined states and transitions are used to check validity of the input word.
  * 
@@ -22,9 +21,9 @@
  * 
  * Transitions also denote a symbol to be popped and a set of symbols to be pushed.
  *  When the stack gets empty the program execution is stopped, indicating that the
- *  input word isn't accepted by the automata, unless the loading belt has reached the
- *  cell where the last letter of the input word is stored, in which case the word is
- *  considered valid.
+ *  input word isn't recognized by the automata, unless the loading belt has reached
+ *  beyond the cell where the last letter of the input word is stored, in which case
+ *  the word is considered recognized.
  */
 
 #ifndef AUTOMATA_H
@@ -40,6 +39,9 @@ class Automata {
   public:
     Automata(std::string beltAlphabet, std::string stackAlphabet, char initialStackSym);
 
+    /**
+     * Returns true if inputWord is recognized by this automata.
+     */
     bool validate(std::string inputWord);
   private:
     std::stack<State> stateHistory;
