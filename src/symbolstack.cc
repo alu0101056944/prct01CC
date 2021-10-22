@@ -7,6 +7,9 @@ SymbolStack::SymbolStack(char initialSym, std::string alphabet) :
     initialSym(initialSym),
     alphabet(alphabet) {}
 
+/**
+ * Push first last char of the symbols string.
+ */
 void SymbolStack::push(std::string symbols) {
   for (int i = symbols.size() - 1; i >= 0; i--) {
     if(find(alphabet.begin(), alphabet.end(), symbols[i]) == alphabet.end() &&
@@ -19,7 +22,7 @@ void SymbolStack::push(std::string symbols) {
     }
     history.push(symbols[i]);
   }
-} 
+}
 
 void SymbolStack::pop(char symbol) {
   if (stack.empty()) {
@@ -35,7 +38,7 @@ void SymbolStack::pop(char symbol) {
 }
 
 void SymbolStack::reset() {
-  stack = std::stack<char>();
+  stack = std::stack<char>(); // to avoid typing a loop
   stack.push(initialSym);
 }
 
