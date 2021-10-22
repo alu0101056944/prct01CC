@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libAssignment1Sources.a CMakeFiles/Assignment1Sources.dir/src/loadingbelt.cc.obj
-C:\MinGW\bin\ranlib.exe libAssignment1Sources.a
